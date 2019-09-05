@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#banner img{
+    width: 100%;
+    height: 466px;
+}
+
+#menu{
+    width: 1200px;
+    height: 358px;
+    /*background: #34ce57;*/
+    margin: 0 auto;
+}
+#menu ul{
+    margin-top: 80px;
+    width: 1200px;
+    height: 218px;
+    /*background: #ffc107;*/
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    /*
+    justify-content控制项目在主轴上的对齐方式
+        取值
+        1.flex-start  在主轴的起点对齐
+        2.flex-end   在主轴的终点对齐
+        3.center     在主轴居中对齐
+        4.space-between 两端对齐
+        5.space-around  每个间距相同
+    */
+}
+#menu li a{
+    width: 79px;
+    height: 218px;
+    margin: 0 auto;
+}
+#menu ul li a img{
+    transition: all 0.7s ease-out 0s;
+    /*过渡的简写
+        transition:property duration timing-function delay;
+        transition:all 3s;
+        最少写duration
+    */
+}
+#menu ul li a img:hover{
+    transform: scale(1.06);
+    transform: translateY(-15px);
+    /*margin-top: -15px;*/
+}
+
+
+/*顶部图片*/
+#pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#common .section-1,
+#common .section-2,
+#common .section-3{
+    /*background: yellow;*/
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+}
+#common .section-2,
+#common .section-3{
+    margin-top: 180px;
+}
+
+#common .section-1 .title,
+#common .section-2 .title,
+#common .section-3 .title{
+    font-size: 24px;
+    font-family: Simsun;
+    text-align: center;
+    color: #ac1d0f;
+    padding: 20px 0;
+}
+#common .section-1 hr,
+#common .section-2 hr,
+#common .section-3 hr{
+    width: 25px;
+    margin: -10px auto 0;   /*margin:v1 v2 v3;  上v1   左右v2  下v3*/
+    background-color: #ac1d0f;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #ccc;
+}
+#common .section-1 .wrap,
+#common .section-2 .wrap,
+#common .section-3 .wrap{
+    margin-top: 30px;
+}
+#common .section-1 .wrap img,
+#common .section-2 .wrap img,
+#common .section-3 .wrap img{
+    width: 100%;
+    height: 410px;
+}
+#common .section-1 .wrap .more,
+#common .section-2 .wrap .more,
+#common .section-3 .wrap .more{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;  /*垂直居中*/
+    text-align: center;     /*水平居中*/
+    color: #d6c7b0;
+    display: block;
+    text-decoration: none;
+    background-color: #ac1d0f;
+    margin: 45px auto 0;    /*margin:v1 v2 v3;  上v1   左右v2  下v3*/
+}
+
+
+/*尾部样式*/
+#footer{
+    margin-top: 150px;
+}
+#bottom-site .copyright{
+    margin-top: -5px;
+}

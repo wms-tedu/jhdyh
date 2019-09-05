@@ -1,0 +1,581 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#banner img{
+    width: 100%;
+    height: 466px;
+}
+
+#menu{
+    width: 1200px;
+    height: 358px;
+    /*background: #34ce57;*/
+    margin: 0 auto;
+}
+#menu ul{
+    margin-top: 80px;
+    width: 1200px;
+    height: 218px;
+    /*background: #ffc107;*/
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    /*
+    justify-content控制项目在主轴上的对齐方式
+        取值
+        1.flex-start  在主轴的起点对齐
+        2.flex-end   在主轴的终点对齐
+        3.center     在主轴居中对齐
+        4.space-between 两端对齐
+        5.space-around  每个间距相同
+    */
+}
+#menu li a{
+    width: 79px;
+    height: 218px;
+    margin: 0 auto;
+}
+#menu ul li a img{
+    transition: all 0.7s ease-out 0s;
+    /*过渡的简写
+        transition:property duration timing-function delay;
+        transition:all 3s;
+        最少写duration
+    */
+}
+#menu ul li a img:hover{
+    transform: scale(1.06);
+    transform: translateY(-15px);
+    /*margin-top: -15px;*/
+}
+
+
+#bgBox{
+    background: url("../img/qnyh/bg_0.jpg") 0 0 no-repeat;
+    width: 100%;
+    background-size: cover; /*background-size取值
+                                1.width height 以px为单位的数字
+                                2. width%  height%
+                                3.cover 将背景图等比缩放，直到完全覆盖元素的所有区域为止
+                                       背景图显示不全
+                                4.contain 将背景图等比放大,直到背景图碰到元素的一个边缘
+                                为止，元素可能填充不全
+                             */
+}
+#bgBox .brief{
+    width: 1200px;
+    margin: 0 auto;
+    /*background: #ffc107;*/
+    margin-top: -60px;
+}
+#bgBox .brief img{
+    width: 683px;
+    height: 460px;
+    border: 1px solid #d8ca99;
+}
+#bgBox .brief .info{
+    float: right;
+    width: 490px;
+    padding: 40px 0;
+}
+#bgBox .brief .info .dt{
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    height: 120px;
+    overflow: hidden;   /*溢出部分不可见
+                        overflow取值：
+                            1.visible 可见的，默认值，溢出可见
+                            2.hidden 隐藏的，溢出部分不可见
+                            3.scroll  显示滚动条，溢出时滚动条可用
+                            4.auto   自动，溢出时显示滚动条并可用，不溢出不显示滚动条
+                        */
+    margin: 20px;
+    text-indent: 2em;   /*首行缩进*/
+}
+#bgBox .brief .info .line{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    width: 490px;
+}
+
+#bgBox .listBox{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#bgBox .listBox .item_gjBox .tit{
+    width: 610px;
+    margin: 0 auto;
+    display: block; /*块级元素对margin: 0 auto;起作用*/
+}
+#bgBox .listBox .item_gjBox .juan{
+    display: block;
+    margin: 0 auto;
+}
+#bgBox .listBox .item_gjBox .juanInfo{
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+#bgBox .listBox .item_gjBox .juanInfo span{
+    display: block;
+    text-indent: 2em;
+}
+
+#bgBox .listBox .item_lqBox{
+    width: 1200px;
+    height: 800px;
+    /*background: #ffc107;*/
+}
+#bgBox .listBox .item_lqBox .tit{
+    margin: 0 auto;
+    display: block; /*块级元素对margin: 0 auto;起作用*/
+    margin-top: 100px;
+}
+#bgBox .listBox .item_lqBox .clear{
+    width: 1200px;
+    height: 460px;
+    /*background : #000;*/
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#bgBox .listBox .item_lqBox .clear .picBox{
+    float: left;
+    border: 1px solid #d8ca99;
+    width: 611px;
+    height: 458px;
+
+}
+
+/*轮播图*/
+#bgBox .listBox .item_lqBox .clear .picBox img{
+    width: 611px;
+    height: 458px;
+}
+
+
+#bgBox .listBox .item_lqBox .info{
+    width: 490px;
+    height: 414px;
+    /*background: #34ce57;*/
+    float: right;
+}
+#bgBox .listBox .item_lqBox .info .tit1{
+    font-size: 20px;
+    color: #333;
+    line-height: 24px;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    /*margin: 20px 0;*/
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-line-clamp: 2;*/
+}
+#bgBox .listBox .item_lqBox .info .dt1{
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    height: 60px;
+    overflow: hidden;
+    /*margin: 20px 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;*/
+}
+#bgBox .listBox .item_lqBox .line{
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+#bgBox .listBox .item_lqBox .clear a{
+    color: #fff;
+    background: #d8ca99;
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    margin-top: 15px;
+}
+
+#bgBox .listBox .item_ppBox{
+    margin: 30px 0;
+    /*background: url("../img/qnyh/p3.jpg");*/
+
+}
+#bgBox .listBox .item_ppBox .tit{
+    width: 610px;
+    display: block;
+    margin: 0 auto;
+}
+#bgBox .listBox .item_ppBox .ppImg{
+    /*width: 1200px;*/
+    height: auto;
+    margin-top: 30px;
+}
+#bgBox .listBox .item_ppBox .ppImgBox{
+    position: relative;
+}
+#bgBox .listBox .item_ppBox .ppImgBox .more{
+    display: inline-block;
+    width: 190px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #cd0000;
+    color: #ffffff;
+    display: block;
+    /*float: right;*/
+    font-size: 28px;
+    margin: 0 auto;
+    text-decoration: none;
+
+    position: absolute;
+    left: 500px;
+    top: 610px;
+}
+
+#bgBox .listBox .item_whBox{
+    margin-top: 130px;
+}
+#bgBox .listBox .item_whBox .tit{
+    width: 610px;
+    display: block;     /*块级元素对margin: 0 auto;起作用*/
+    margin: 0 auto;
+}
+.item_whBox .proList .clear{
+    margin-bottom: 5px;
+}
+.item_whBox .img_l{
+    width: 628px;
+    height: 293px;
+    border: 1px solid #b5a469;
+}
+.item_whBox .img_l img{
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+.item_whBox .img_l, .item_whBox .img_r,
+.item_whBox .img_l2, .item_whBox .img_r2,
+.item_whBox .img_l3, .item_whBox .img_r3{
+    position: relative;
+    overflow: hidden;   /*溢出部分不可见
+                        overflow取值：
+                            1.visible 可见的，默认值，溢出可见
+                            2.hidden 隐藏的，溢出部分不可见
+                            3.scroll  显示滚动条，溢出时滚动条可用
+                            4.auto   自动，溢出时显示滚动条并可用，不溢出不显示滚动条
+                        */
+}
+
+.item_whBox .img_l img, .item_whBox .img_r img,
+.item_whBox .img_l2 img, .item_whBox .img_r2 img,
+.item_whBox .img_l3 img , .item_whBox .img_r3 img{
+    transition:all .5s linear 0s;
+}
+.item_whBox .img_l:hover img, .item_whBox .img_r:hover img,
+.item_whBox .img_l2:hover img, .item_whBox .img_r2:hover img,
+.item_whBox .img_l3:hover img , .item_whBox .img_r3:hover img{
+    transform:scale(1.2);
+}
+
+
+/*缩放动画部分*/
+.item_whBox .img_l .hBg, .item_whBox .img_r .hBg,
+.item_whBox .img_l2 .hBg, .item_whBox .img_r2 .hBg,
+.item_whBox .img_l3 .hBg, .item_whBox .img_r3 .hBg{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;  /*（默认情况下）先隐藏*/
+}
+.item_whBox .img_l:hover .hBg, .item_whBox .img_r:hover .hBg,
+.item_whBox .img_l2:hover .hBg, .item_whBox .img_r2:hover .hBg,
+.item_whBox .img_l3:hover .hBg, .item_whBox .img_r3:hover .hBg{
+    display: block; /*鼠标移动到之后显示*/
+}
+
+
+
+
+.hBg h6{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    letter-spacing: 3px;
+}
+.hBg a{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;  /*height与line-height的值相同，是为了要实现垂直剧中*/
+    border: 1px solid #ffffff;
+    display: block;
+    margin: 0 auto; /*水平居中*/
+    text-decoration: none;
+}
+
+.item_whBox .img_r{
+    float: right;
+    width: 563px;
+    height: 293px;
+    border: 1px solid #b5a469;
+    margin-top: -293px;
+}
+.item_whBox .img_r img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+
+.item_whBox .img_l2{
+    float: left;
+    width: 563px;
+    height: 293px;
+    border: 1px solid #b5a469;
+
+}
+.item_whBox .img_r2{
+    float: right;
+    width: 628px;
+    height: 293px;
+    border: 1px solid #b5a469;
+}
+
+.item_whBox .img_l2 .hBg{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.item_whBox .img_r2 .hBg{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item_whBox .img_l3{
+    width: 628px;
+    height: 293px;
+    border: 1px solid #b5a469;
+}
+.item_whBox .img_l3 img{
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+.item_whBox .img_l3 .hBg{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.item_whBox .img_r3 .hBg{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.item_whBox .img_r3{
+    float: right;
+    width: 563px;
+    height: 293px;
+    border: 1px solid #b5a469;
+    margin-top: -293px;
+}
+.item_whBox .img_r3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+
+
+#bgBox .listBox .item_lyBox{
+    margin: 0 auto;
+    display: block; /*块级元素对margin: 0 auto;起作用*/
+    margin-top: 100px;
+}
+#bgBox .listBox .item_lyBox .tit{
+    width: 610px;
+    display: block;
+    margin: 0 auto;
+}
+#bgBox .listBox .item_lyBox .lyImg{
+    /*width: 1200px;*/
+    height: auto;
+    margin-top: 30px;
+}
+#bgBox .listBox .item_lyBox .lyImgBox{
+    background: url("../img/qnyh/bg_1.png") no-repeat;
+    height: 700px;
+    position: relative;
+    margin-top: 40px;
+}
+#bgBox .listBox .item_lyBox .lyImgBox img:first-child{
+    width: 785px;
+    height: 536px;
+    display: inline-block;
+    float: left;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+#bgBox .listBox .item_lyBox .lyImgBox img:last-child{
+    width: 390px;
+    height: 536px;
+    display: inline-block;
+    float: right;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+
+#bgBox .listBox .item_ghBox{
+    margin: 0 auto;
+    display: block; /*块级元素对margin: 0 auto;起作用*/
+    margin-top: 100px;
+}
+#bgBox .listBox .item_ghBox .tit{
+    width: 610px;
+    display: block;
+    margin: 0 auto;
+}
+#bgBox .listBox .item_ghBox .ghImgBox{
+    background: url("../img/qnyh/bg_2.png") no-repeat;
+    height: 700px;
+    position: relative;
+    margin-top: 40px;
+}
+#bgBox .listBox .item_ghBox .ghImgBox img:first-child{
+    width: 670px;
+    height: 445px;
+    display: inline-block;
+    float: left;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+#bgBox .listBox .item_ghBox .ghImgBox .Intro{
+    width: 470px;
+    height: 170px;
+    /*background: red;*/
+    float: right;
+    margin: 160px 20px 0 0;
+}
+#bgBox .listBox .item_ghBox .ghImgBox .Intro .txt{
+    font-size: 18px;
+    color: #666;
+    height: 200px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    text-indent: 1ex;   /*首行缩进*/
+}
+#bgBox .listBox .item_ghBox .ghImgBox .Intro img{
+    width: 125px;
+    height: 40px;
+    margin-top: -25px;
+    margin-left: -1px;
+}
+
+
+
+/*#footer部分*/
+#footer{
+    width: 100%;
+    height: 108px;
+    background: #ac1d0f;
+}
+#footer h5{
+    float:left;
+    font-size:14px;
+    font-weight: bold;
+    line-height:34px;
+    color: #fff;
+    margin: 15px 0 0 50px;
+    padding-right: 20px;
+    height:108px;
+}
+#footer>ul{
+    padding-top:15px;
+}
+#footer>ul li{
+    list-style: none;   /*去掉列表标识项（通俗点说，就是去掉li前面的点）*/
+    display: block; /*设置为区内块*/
+    float: left;
+    padding-right: 20px;
+    /*margin-top: 15px;*/
+}
+#footer>ul li a{    /*p:first-child 伪类选择器*/
+    padding: 0 6px;
+    line-height: 34px;
+    font-size: 13px;
+    vertical-align: baseline;   /*单元格内数据垂直对齐方式为基线对齐*/
+    text-decoration: none; /*去掉a标记自带的下划线*/
+    color:#fff;
+}
+
+
+#bottom-site{
+    width: 100%;
+    height: 90px;
+    /*background: #0f0;*/
+    text-align: center;
+
+}
+#bottom-site .links-about{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+#bottom-site .links-about .one-link{
+    display: inline-block;
+    margin-right: 10px;
+}
+#bottom-site .links-about .one-link:first-child{
+    margin-left: -110px;
+}
+#bottom-site .links-about .one-link a{
+    padding: 0 8px;
+    font-size: 14px;
+    color:#6c6a6c;
+    text-decoration: none;  /*去掉下划线*/
+    /*vertical-align: baseline;*/
+    /*background: transparent;*/
+}
+
+#bottom-site .copyright {
+    font-size: 14px;
+    color: #6c6a6c;
+    margin-bottom: 1px;
+}
+#bottom-site a{
+    font-size: 14px;
+    color: #6c6a6c;
+    text-decoration: none;
+}
+
+

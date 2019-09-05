@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>大运河</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"/>
+    <!--导入boot的4个文件，导入顺序是固定的 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body>
+    <!--顶部-->
+    <div id="top">
+        <a href=""><img src="img/index/logo.png" alt=""/></a>
+        <div class="title">
+            <h1>京杭大运河旅游官网</h1>
+            <h3>GRAND CANAL TRAVEL</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="qnyh.html">千年运河</a></li>
+                <li><a href="yhwx.html">运河万象</a></li>
+                <li><a href="yh18c.html">运河18城</a></li>
+                <li><a href="yhtt.html">运河头条</a></li>
+                <li><a href="yhzty.html">运河主题游</a></li>
+                <li><a href="yhxx.html">运河心选</a></li>
+            </ul>
+        </div>
+        <form action="">
+            <input type="text" class="input-text" placeholder=""/>
+            <input type="button" class="input-button" value="搜 索">
+        </form>
+    </div>
+
+    <!--轮播图部分-->
+    <!-- 外包裹    创建轮播，使用carousel类   让图片动起来使用data-ride="carousel"-->
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 1.图片-->
+        <!--需要使用div把所有图片包裹，使用类名carousel-inner-->
+        <div class="carousel-inner">
+            <!--每一个img还需要包裹一个div,使用carousel-item-->
+            <div class="carousel-item active">
+                <a href="index-lunbo/lun1.html" target="_blank"><img src="img/index/carousel/lun1.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href="index-lunbo/lun2.html" target="_blank"><img src="img/index/carousel/lun2.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href="index-lunbo/lun3.html" target="_blank"><img src="img/index/carousel/lun3.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href="index-lunbo/lun4.html" target="_blank"><img src="img/index/carousel/lun4.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!-- 2.左右箭头-
+        <a href="#demo" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a href="#demo"  data-slide="prev"  class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        -->
+        <!-- 3.轮播指示器-->
+        <ul class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#demo"></li>
+            <li data-slide-to="1" data-target="#demo"></li>
+            <li data-slide-to="2" data-target="#demo"></li>
+            <li data-slide-to="3" data-target="#demo"></li>
+        </ul>
+    </div>
+
+    <div class="section-title">运河万象</div>
+
+    <!--圆圈导航部分-->
+    <div id="res">
+        <ul>
+            <li>
+                <a href="index-res/res1.html" target="_blank">
+                    <img src="img/index/res/icon1_01.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="index-res/res2.html" target="_blank">
+                    <img src="img/index/res/icon1_02.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="index-res/res3.html" target="_blank">
+                    <img src="img/index/res/icon1_03.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="index-res/res4.html" target="_blank">
+                    <img src="img/index/res/icon1_04.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="index-res/res5.html" target="_blank">
+                    <img src="img/index/res/icon1_05.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="index-res/res6.html" target="_blank">
+                    <img src="img/index/res/icon1_06.png" alt=""/>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-title">运河18城</div>
+
+    <div id="centerbody">
+        <ul>
+            <li>
+                <a href="centerbody/centerbody1.html" target="_blank">
+                    <img src="img/index/city/1_0.jpg" alt=""/>
+                    <div class="mesg">
+                        <h3>2018年第六届中国大运河（台儿庄）河钓大赛开钓</h3>
+                        <p>2018年第六届中国大运河（台儿庄）河钓大赛于2018年7月1日-2日在台儿庄运河湿地双龙湖休闲垂钓公园举办。</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="centerbody/centerbody2.html" target="_blank">
+                    <img src="img/index/city/2_0.jpg" alt=""/>
+                    <div class="mesg">
+                        <h3>大运河非遗优秀项目亮相台儿庄</h3>
+                        <p>首届大运河非遗优秀项目展演历时10天，包含民间舞蹈、曲艺杂技与竞技、民俗类等非遗项目。</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="centerbody/centerbody3.html" target="_blank">
+                    <img src="img/index/city/3_0.jpg" alt=""/>
+                    <div class="mesg">
+                        <h3>台儿庄古城展演大运河文化带非遗</h3>
+                        <p>本届活动主题为“多彩非遗 美好生活”。</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="banner">
+            <img src="img/index/city/9_1.jpg" alt="" style="width:680px; height: 430px;"/>
+        </div>
+    </div>
+
+    <div class="section-title">运河头条</div>
+
+    <div id="recommend-area">
+        <ul>
+            <li>
+                <a href="recommend/recommend1.html" target="_blank">
+                    <img src="img/index/recommend/1.jpg" alt=""/>
+                    <div class="recommend-info">
+                        <h3>申遗成功五周年，杭州写下一部大运河“蜕变史”</h3>
+                        <div>
+                            <p>流淌了2000多年的大运河</p>
+                            <p>见证着杭州的成长与变迁</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="recommend/recommend2.html" target="_blank">
+                    <img src="img/index/recommend/2.jpg" alt=""/>
+                    <div class="recommend-info">
+                        <h3>中共中央办公厅、国务院办公厅印发《大运河文化保护传承利用规划纲要》</h3>
+                        <div>
+                            <p>充分展现大运河遗存重载的文化</p>
+                            <p>活化大运河流淌半生的文化</p>
+                            <p>弘扬大运河历史凝练的文化</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="recommend/recommend3.html" target="_blank">
+                    <img src="img/index/recommend/3.jpg" alt=""/>
+                    <div class="recommend-info">
+                        <h3>大运河缤纷旅游带应该怎么建</h3>
+                        <div>
+                            <p>《大运河文化保护传承利用规划纲要公开发布》</p>
+                            <p>将成文旅融合新样板</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <a href="yh18c.html" target="_blank" class="more">阅读更多</a>
+    </div>
+
+    <div class="section-title" style="padding: 0 0 100px 0">运河主题游</div>
+
+    <!--第二个轮播图-->
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 1.图片-->
+        <!--需要使用div把所有图片包裹，使用类名carousel-inner-->
+        <div class="carousel-inner">
+            <!--每一个img还需要包裹一个div,使用carousel-item-->
+            <div class="carousel-item active">
+                <a href="index-lunbo2/bo1.html"><img src="img/index/zty/1.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href="index-lunbo2/bo2.html"><img src="img/index/zty/2.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href="index-lunbo2/bo3.html"><img src="img/index/zty/3.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!-- 2.左右箭头-->
+        <a href="#demo" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a href="#demo"  data-slide="prev"  class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <!-- 3.轮播指示器-->
+        <!--<ul class="carousel-indicators">-->
+            <!--<li class="active" data-slide-to="0" data-target="#demo"></li>-->
+            <!--<li data-slide-to="1" data-target="#demo"></li>-->
+            <!--<li data-slide-to="2" data-target="#demo"></li>-->
+        <!--</ul>-->
+    </div>
+
+    <div class="section-title" style="padding-top: 100px;">运河心选</div>
+
+    <div id="tp">
+        <a href="tp/tp-index.html" target="_blank"><img src="img/index/tp/1.jpg" alt=""/></a>
+        <a href="tp/tp-index.html" target="_blank"><img src="img/index/tp/2.jpg" alt=""/></a>
+        <a href="tp/tp-index.html" target="_blank"><img src="img/index/tp/3.jpg" alt=""/></a>
+    </div>
+
+    <div id="footer">
+        <h5>友情链接</h5>
+        <ul>
+            <li><a href="">国家旅游局</a></li>
+            <li><a href="">北京</a></li>
+            <li><a href="">天津</a></li>
+            <li><a href="">沧州</a></li>
+            <li><a href="">德州</a></li>
+            <li><a href="">衡水</a></li>
+            <li><a href="">聊城</a></li>
+            <li><a href="">济宁</a></li>
+            <li><a href="">泰安</a></li>
+            <li><a href="">枣庄</a></li>
+            <li><a href="">宿迁</a></li>
+            <li><a href="">淮安</a></li>
+            <li><a href="">扬州</a></li>
+            <li><a href="">常州</a></li>
+            <li><a href="">无锡</a></li>
+            <li><a href="">苏州</a></li>
+            <li><a href="">湖州</a></li>
+            <li><a href="">嘉兴</a></li>
+            <li><a href="">杭州</a></li>
+            <li><a href="">山东省文化和旅游厅</a></li>
+            <li><a href="">江苏省文化和旅游厅</a></li>
+            <li><a href="">浙江省文化和旅游厅</a></li>
+            <li><a href="">杭州运河景区</a></li>
+            <li><a href="">台儿庄古城</a></li>
+            <li><a href="">乌镇景区</a></li>
+            <li><a href="">塘栖古镇</a></li>
+            <li><a href="">中华水上古城</a></li>
+        </ul>
+    </div>
+
+    <div id="bottom-site">
+        <div class="links-about">
+            <div class="one-link">
+                <span>|</span>
+                <a href="">运河简介</a>
+                <span>|</span>
+            </div>
+            <div class="one-link">
+                <span>|</span>
+                <a href="">运河联盟</a>
+                <span>|</span>
+            </div>
+            <div class="one-link">
+                <span>|</span>
+                <a href="">联系我们</a>
+                <span>|</span>
+            </div>
+            <div class="one-link">
+                <span>|</span>
+                <a href="">使用协议</a>
+                <span>|</span>
+            </div>
+        </div>
+        <p class="copyright">京杭大运河城市旅游推广联盟  浙ICP备16014841号</p>
+    </div>
+
+</body>

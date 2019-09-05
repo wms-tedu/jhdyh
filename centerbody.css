@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#detail{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*background: red;*/
+}
+/*
+    2.溢出处理
+    当内容多，元素区域小的时候，就会产生溢出效果。
+    默认都是垂直溢出
+    属性：overflow  overflow-x  overflow-y
+    取值：
+      1.visible 可见的，默认值，溢出可见
+      2.hidden 隐藏的，溢出部分不可见
+      3.scroll  显示滚动条，溢出时滚动条可用
+      4.auto   自动，溢出时显示滚动条并可用，不溢出不显示滚动条
+*/
+#detail .pic img{
+    width: 100%;
+    height: 523px;
+    display: block;
+    margin: 0 auto;
+}
+
+#detail .news{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;    /*设置圆角*/
+    padding-top: 15px;
+    box-shadow: 0 0 6px #ccc;
+    /*
+        边框阴影 box-shadow
+        取值
+        h-shadow  v-shadow  blur  spread  color  inset
+        h-shadow:阴影水平的偏移值 +往右 -往左 px为单位的数字
+        v-shadow:阴影垂直的偏移值 +往下 -往上 px为单位的数字
+        ---------后面的值是可选----------------
+        blur:阴影模糊的距离，值越大，模糊距离越明显
+        spread:阴影的尺寸，指定要在基础阴影上扩出来的大小
+        color:阴影颜色
+        inset:将默认的外阴影该为内阴影
+    */
+    margin-top: 20px;
+}
+#detail .news h2{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #d61518;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Simsun;
+}
+#detail .news .info{
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+/*#detail .news span{*/
+    /*margin: 0 10px;*/
+/*}*/
+
+#detail .news .share{
+    width: 300px;
+    height: 30px;
+    /*background: red;*/
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin: 20px auto;
+}
+#detail .news .share span{
+    width: 56px;
+    height: 30px;
+    line-height: 27px;
+    float: left;
+    margin-right: -1px;
+}
+#detail .news .share a{
+    display: block;
+    float: left;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+#detail .news .share a:last-child{
+    width: 41px;
+    height: 16px;
+    color: #333;
+    text-decoration: none;
+}
+#detail .news .share a img {
+    width: 25px;
+    height: 25px;
+}
+
+#detail .news .content{
+    width: 90%;
+    margin: 5%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+#detail .news .content p:first-child,
+#detail .news .content p:nth-child(2){
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #555;
+    /*text-indent: 2em;*/
+    margin: 15px 0;
+    text-align: left;
+}
+#detail .news .content p{
+    margin-top: 22px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    text-align: left;    /*两端对齐*/
+    background-color: rgb(255,255,255);
+
+}
+
+#detail .news .content img{
+    display: block;
+    margin: 0 auto;
+}
+
+#bottom-site .copyright{
+    margin-top: -5px;
+}

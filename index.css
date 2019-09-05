@@ -1,0 +1,369 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#top{
+    width: 1309px;
+    height: 68px;
+    /*background: yellow;*/
+    margin: 0 auto;
+}
+#top img{  /*此处的img不是块级元素，因此使用内外边距有效*/
+    width:78px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 12px;
+    /*display: block;*/
+    /*float: left;*/
+}
+#top .title h1{
+      font-size: 20px;
+      color: #ac1d0f;
+      font-style: normal;  /*normal：不设置爱字体*/
+      font-weight: normal; /*normal：字体不加粗*/
+      margin-top: -42px;
+      margin-left: 140px;
+}
+#top .title h3{
+    font-size: 10px;
+    color: #928178;
+    font-style: normal;  /*normal：不设置爱字体*/
+    font-weight: normal; /*normal：字体不加粗*/
+    margin-top: -5px;
+    margin-left: 140px;
+}
+
+
+/*导航栏*/
+#top .nav{
+    width:650px;
+    height: 40px;
+    /*background:#0ff;*/
+    margin-top: -45px;
+    margin-left: 400px;
+}
+#top .nav>ul li{
+    list-style: none;   /*去掉列表标识项（通俗点说，就是去掉li前面的点）*/
+    display: block;  /*设置为区内块*/
+    float: left;
+    margin-top: 5px;
+}
+
+#top .nav>ul li a{    /*p:first-child 伪类选择器*/
+    padding: 0 6px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none; /*去掉a标记自带的下划线*/
+    color:#4e555b;
+    margin-left: 15px;
+}
+/*#top .nav>ul li:nth-child(6){
+    width: 110px;
+    height: 30px;
+    background: red;
+}*/
+/*#top .nav>ul li a:not(first-child){
+             否定伪类选择器
+                elem:not(selector){}
+                匹配括号中selector的元素都不要
+                p:not([title]){
+                  color:#00f;
+                }
+}*/
+
+
+#top .input-text{
+    width: 104px;
+    height: 18px;
+    border: 1px solid #928178;
+    padding-left: 8px;
+    display: block;
+    float: right;
+    margin-top: -25px;
+    margin-right: 110px;
+}
+#top .input-button{
+    float: right;
+    font-size: 14px;
+    color: #928178;
+    line-height: 1.5em;
+    border: none;   /*去掉边框*/
+    background-color: #fff;
+    font-family: Microsoft Yahei;   /*字体类型*/
+    margin-top: -26px;
+    margin-right: 66px;
+}
+
+
+
+/*section-title*/
+.section-title{
+    width: 1200px;
+    height: 25px;
+    padding: 40px 0;
+    /*background: chartreuse;*/
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: '宋体';
+    text-align: center;
+    color: #d61518;
+    font-weight: bold;
+}
+
+
+#res{
+    width: 1200px;
+    height: 167px;
+    margin: 0 auto;
+    /*background:#c6c8ca;*/
+}
+#res ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+        /*
+        justify-content控制项目在主轴上的对齐方式
+            取值
+            1.flex-start  在主轴的起点对齐
+            2.flex-end   在主轴的终点对齐
+            3.center     在主轴居中对齐
+            4.space-between 两端对齐
+            5.space-around  每个间距相同
+        */
+    margin-top: 20px;
+}
+
+/*子元素过滤*/
+#res ul li:first-child:hover{
+    background-image: url("../img/index/res/icon1_11.png");
+}
+#res ul li:nth-child(2):hover{
+    background-image: url("../img/index/res/icon1_12.png");
+}
+#res ul li:nth-child(3):hover{
+    background-image: url("../img/index/res/icon1_13.png");
+}
+#res ul li:nth-child(4):hover{
+    background-image: url("../img/index/res/icon1_14.png");
+}
+#res ul li:nth-child(5):hover{
+    background-image: url("../img/index/res/icon1_15.png");
+}
+#res ul li:last-child:hover{
+    background-image: url("../img/index/res/icon1_16.png");
+}
+
+
+#centerbody{
+    width: 1200px;
+    height: 430px;
+    /*background: #f0f;*/
+    margin: 0 auto;
+}
+#centerbody ul{
+    list-style: none;
+    width: 500px;
+    height: 430px;
+    /*background: dodgerblue;*/
+    float: left;
+}
+#centerbody ul li{
+    width: 500px;
+    height: 136px;
+    border-bottom: 1px solid #f5f5f5;
+    /*background: #ffc107;*/
+}
+#centerbody ul li:nth-child(2){
+    padding: 10px 0 10px 0;
+    height: 146px;
+}
+
+#centerbody ul li img{
+    width: 178px;
+    height: 125px;
+}
+
+#centerbody ul li:nth-child(3){
+    padding: 10px 0 10px 0;
+    height: 146px;
+}
+
+
+
+#centerbody .mesg{
+    width: 312px;
+    height: 134px;
+    float: right;
+    padding-top: 10px;
+}
+#centerbody .mesg h3{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color:#000;
+    height: auto;
+}
+#centerbody .mesg p{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #666;
+    line-height: 22px;
+}
+
+#centerbody .banner{
+    width: 680px;
+    height: 430px;
+    float: right;
+}
+
+
+
+#recommend-area{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    overflow: hidden;   /*overflow:hidden 隐藏的，溢出部分不可见*/
+}
+#recommend-area ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    /*
+    justify-content控制项目在主轴上的对齐方式
+        取值
+        1.flex-start  在主轴的起点对齐
+        2.flex-end   在主轴的终点对齐
+        3.center     在主轴居中对齐
+        4.space-between 两端对齐
+        5.space-around  每个间距相同
+    */
+    margin-top: 20px;
+}
+#recommend-area ul li{
+    display: inline-block;
+    float: left;
+}
+#recommend-area ul li img{
+    width: 388px;
+    height: 295px;
+}
+#recommend-area a{
+    text-decoration: none;  /*去掉下划线*/
+}
+#recommend-area .recommend-info h3{
+    font-size: 18px;
+    font-family: 宋体;
+    color: #000;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: justify;
+    width: 388px;
+}
+#recommend-area .recommend-info p{
+    width: 388px;
+    height: 26px;
+    margin: 0;
+    text-align: center;
+    color:#6c757d;
+}
+#recommend-area .more{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ac1d0f;
+    color: #d6c7b0;
+    margin-top: 80px;
+}
+
+
+
+#tp{
+    width: 100%;
+    height: 233px;
+    /*background: red;*/
+    display:flex;
+    margin: 30px 50px;
+}
+#tp a{
+    display: block;
+    margin-right:20px;
+}
+
+
+
+/*#footer{*/
+    /*width: 100%;*/
+    /*height: 108px;*/
+    /*background: #ac1d0f;*/
+    /*margin-top: 100px;*/
+/*}*/
+/*#footer h5{*/
+    /*float:left;*/
+    /*font-size:14px;*/
+    /*font-weight: bold;*/
+    /*line-height:34px;*/
+    /*color: #fff;*/
+    /*margin: 15px 0 0 50px;*/
+    /*padding-right: 20px;*/
+    /*height:108px;*/
+/*}*/
+/*#footer>ul{*/
+    /*padding-top:15px;*/
+/*}*/
+/*#footer>ul li{*/
+    /*list-style: none;   /!*去掉列表标识项（通俗点说，就是去掉li前面的点）*!/*/
+    /*display: block; /!*设置为区内块*!/*/
+    /*float: left;*/
+    /*padding-right: 20px;*/
+    /*/!*margin-top: 15px;*!/*/
+/*}*/
+/*#footer>ul li a{    /!*p:first-child 伪类选择器*!/*/
+    /*padding: 0 6px;*/
+    /*line-height: 34px;*/
+    /*font-size: 13px;*/
+    /*vertical-align: baseline;   /!*单元格内数据垂直对齐方式为基线对齐*!/*/
+    /*text-decoration: none; /!*去掉a标记自带的下划线*!/*/
+    /*color:#fff;*/
+/*}*/
+
+
+/*#bottom-site{*/
+    /*width: 100%;*/
+    /*height: 90px;*/
+    /*/!*background: #0f0;*!/*/
+    /*text-align: center;*/
+
+/*}*/
+/*#bottom-site .links-about{*/
+    /*margin-bottom: 8px;*/
+    /*margin-top: 8px;*/
+/*}*/
+/*#bottom-site .links-about .one-link{*/
+    /*display: inline-block;*/
+    /*margin-right: 10px;*/
+/*}*/
+/*#bottom-site .links-about .one-link:first-child{*/
+    /*margin-left: -110px;*/
+/*}*/
+/*#bottom-site .links-about .one-link a{*/
+    /*padding: 0 8px;*/
+    /*font-size: 14px;*/
+    /*color:#6c6a6c;*/
+    /*text-decoration: none;  /!*去掉下划线*!/*/
+    /*/!*vertical-align: baseline;*!/*/
+    /*/!*background: transparent;*!/*/
+/*}*/
+
+/*#bottom-site .copyright{*/
+    /*font-size: 14px;*/
+    /*color: #6c6a6c;*/
+    /*margin-bottom: 8px;*/
+/*}*/
+

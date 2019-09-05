@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*内外边距请0*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*轮播的样式*/
+.carousel{
+    width: 1309px;
+    height:410px;
+    margin: 0 auto;
+}
+.carousel-item img{
+    width: 1309px;
+    height:410px;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width:4%;height:20%;
+    top:40%;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 4px;
+}
+
+.carousel-indicators li{
+    width:0.8rem;height:0.8rem;
+    background:#fff;
+    border-radius:50%;
+    maring-left:6px;
+    maring-right:6px;
+}
+.carousel-indicators li.active{
+    background:#fff;
+}
+.carousel-indicators li:hover{
+    background: #0ff;
+}
+.border-bottom{
+    border-width:3px !important;
+}
+.top_width{height:377px;}
+.bottom_width{height:235px;}
+.f_bg{background: #e8e8e8;}
+/*1L外边距溢出*/
+.f_bg.top_width::before{
+    content:"";
+    display: table;
+}
+.w-40{width:40%;}
+.font-price{font-size:1.5rem;}
+}

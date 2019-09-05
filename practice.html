@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    var a=new Object();
+//    a.value=1;
+//    b=a;      此处是将a的地址赋值给b
+//    b.value=2;
+//    alert(a.value);
+//结果为2
+/*
+    var obj=1+ +"2"+"2";
+    console.log(obj);
+    //结果为32
+    /*分析： 1+ +"2"+"2";
+                1+ 2+"2"
+                    3+"2"
+        所以结果为32
+
+
+var obj=1+ +"2"+ +"2";
+console.log(obj);
+//结果为32
+/*分析： 1+ +"2"+ +"2";
+ 1+ 2+2
+ 5
+ 所以结果为5
+
+
+(function(){
+    var a=b=5;
+    alert(typeof a);
+    alert(typeof b);
+})
+alert(typeof a);    结果为number
+alert(typeof b);    结果为undefined
+
+
+
+a=3;
+a.obj=4;
+alert(a+a.obj); //结果为3+undefined = NaN
+                // 尝试将符号的两端数据转为数值型，如果数据中出现非数字，结果为NaN(Not a Number，不是一个数字)
+                //NaN的数据类型为 number
+*/
+
+/*
+var a=1;
+function fun(){
+    a=10;
+    return a;
+    function a(){}
+}
+fun();
+console.log(a); //1
+
+
+
+function fun(a,b){
+    return a+b || ((c)=>{return a+c});
+}
+console.log(fun(2,3));  //5
+console.log(fun(3)(3)); //6
+
+
+
+
+var p1={name:"john",age:30}
+var p2={name:"luck",age:20}
+function modify1(obj){
+    obj={name:"backus"}
+}
+function modify2(obj){
+    obj.name='backus';
+}
+modify1(p1);
+modify1(p2);
+console.log(p1);    //{name: "john", age: 30}
+console.log(p2);    //{name: "luck", age: 20}
+ */
+
+
+
+//闭包
+/*
+var num=20;
+var obj={
+    num:30,
+    fn:(function(num){
+        this.num*=3; //此处的this指向window
+        num+=15;
+        var num=45;
+        return function(){
+            this.num*=4; ////此处的this指向obj
+            num+=20;
+            console.log(num);
+        }
+    })(num)
+};
+obj.fn();   //65
+var fn=obj.fn;
+fn();   //85
+obj.fn();   //105
+console.log(window.num,obj.num); //240 480
+*/
+
+
+
+/*
+var c=1;
+function c(c){
+    console.log(c);
+    var c=3;
+}
+//c(2);   结果：报错！
+*/
+
+
+var z=10;
+function foo(){
+    console.log(z);
+}
+(function(funArg){
+    var z=20;
+    funArg();
+})(foo);
+//结果：10
+
+
+
+
+
+</script>
+</body>
+</html>

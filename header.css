@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#top{
+    width: 1309px;
+    height: 68px;
+    /*background: yellow;*/
+    margin: 0 auto;
+}
+#top img{  /*此处的img不是块级元素，因此使用内外边距有效*/
+    width:78px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 12px;
+    /*display: block;*/
+    /*float: left;*/
+}
+#top .title h1{
+    font-size: 20px;
+    color: #ac1d0f;
+    font-style: normal;  /*normal：不设置爱字体*/
+    font-weight: normal; /*normal：字体不加粗*/
+    margin-top: -42px;
+    margin-left: 140px;
+}
+#top .title h3{
+    font-size: 10px;
+    color: #928178;
+    font-style: normal;  /*normal：不设置爱字体*/
+    font-weight: normal; /*normal：字体不加粗*/
+    margin-top: -5px;
+    margin-left: 140px;
+}
+#top .nav{
+    width:650px;
+    height: 40px;
+    /*background:#0ff;*/
+    margin-top: -45px;
+    margin-left: 400px;
+}
+#top .nav>ul li{
+    list-style: none;   /*去掉列表标识项（通俗点说，就是去掉li前面的点）*/
+    display: block;  /*设置为区内块*/
+    float: left;
+    margin-top: 5px;
+}
+
+#top .nav>ul li a{    /*p:first-child 伪类选择器*/
+    padding: 0 6px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none; /*去掉a标记自带的下划线*/
+    color:#4e555b;
+    margin-left: 15px;
+}
+/*#top .nav>ul li:nth-child(6){
+    width: 110px;
+    height: 30px;
+    background: red;
+}*/
+/*#top .nav>ul li a:not(first-child){
+             否定伪类选择器
+                elem:not(selector){}
+                匹配括号中selector的元素都不要
+                p:not([title]){
+                  color:#00f;
+                }
+}*/
+
+#top .input-text{
+    width: 104px;
+    height: 18px;
+    border: 1px solid #928178;
+    padding-left: 8px;
+    display: block;
+    float: right;
+    margin-top: -25px;
+    margin-right: 110px;
+}
+#top .input-button{
+    float: right;
+    font-size: 14px;
+    color: #928178;
+    line-height: 1.5em;
+    border: none;   /*去掉边框*/
+    background-color: #fff;
+    font-family: Microsoft Yahei;   /*字体类型*/
+    margin-top: -26px;
+    margin-right: 66px;
+}

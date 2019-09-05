@@ -1,0 +1,232 @@
+@charset "utf-8";
+/*清除内外边距*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#pic img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#centerbody{
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+#centerbody .recommend{
+    width: 1200px;
+    height: 481px;
+    /*background: red;*/
+    margin: 40px auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ececec;
+}
+#centerbody .recommend ul{
+    list-style: none;
+    display:flex;   /*将元素变为弹性容器*/
+    justify-content: space-between;
+    /*
+    justify-content控制项目在主轴上的对齐方式
+        取值
+        1.flex-start  在主轴的起点对齐
+        2.flex-end   在主轴的终点对齐
+        3.center     在主轴居中对齐
+        4.space-between 两端对齐
+        5.space-around  每个间距相同
+    */
+}
+#centerbody .recommend ul li{
+    width: 388px;
+    height: 420px;
+    /*background: #f0f;*/
+    cursor: pointer;
+    /*光标cursor
+        default  默认 箭头
+        pointer  小手
+        wait    等待
+        crosshair  +
+        text   文本 大写I
+        help   帮助  ?
+    */
+    overflow: hidden;
+    /*
+   属性：overflow  overflow-x  overflow-y
+       取值：1.visible 可见的，默认值，溢出可见
+            2.hidden  隐藏的，溢出部分不可见
+            3.scroll  显示滚动条，溢出时滚动条可用
+            4.auto   自动，溢出时显示滚动条并可用，不溢出不显示滚动条
+   */
+}
+#centerbody .recommend ul li img{
+    width: 388px;
+    height: 255px;
+}
+#centerbody .recommend ul li .info{
+    padding: 10px 0 0 0;
+}
+#centerbody .recommend ul li .info h3{
+    font-family: 宋体;
+    font-size: 18px;
+    color: #000;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: justify;    /*文本两端对齐*/
+}
+#centerbody .recommend ul li .info p{
+    color: #666;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: justify;    /*文本两端对齐*/
+    height: 175px;
+    line-height: 25px;
+    overflow: hidden;
+    /*
+    属性：overflow  overflow-x  overflow-y
+        取值：1.visible 可见的，默认值，溢出可见
+             2.hidden  隐藏的，溢出部分不可见
+             3.scroll  显示滚动条，溢出时滚动条可用
+             4.auto   自动，溢出时显示滚动条并可用，不溢出不显示滚动条
+    */
+}
+
+
+#centerbody .List{
+    width: 1200px;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+#centerbody .List .listbox{
+    width: 102%;
+    height: auto;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+#centerbody .List ul{
+    /*background: red;*/
+    list-style: none;
+}
+#centerbody .List ul li{
+    /*display: list-item;
+    text-align: match-parent;*/
+}
+#centerbody .List .listbox li{
+    width: 48%;
+    height: 110px;
+    border-bottom: 1px solid #ececec;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    float: left;
+}
+#centerbody .List .listbox li .date{
+    width: 14%;
+    height: 86%;
+    font-size: 18px;
+    border-right: 1px solid #ccc;
+    color: #d61518;
+    float: left;
+    padding-right: 2%;
+}
+.List .listbox li .date i{
+    font-size: 72px;
+    color: #d61518;
+    font-style: normal; /*设置字体样式为正常模式*/
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    /*margin-top: -20px;*/
+}
+.List .listbox li .date span{
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+}
+
+.List .listbox li a{
+    text-decoration: none;  /*去掉下划线*/
+}
+.List .listbox li a .msg{
+    width: 82%;
+    float: right;
+}
+.List .listbox li a .msg h3{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: #000;
+    height: auto;
+    line-height: 24px;
+    margin: 10px 0;
+}
+.List .listbox li a .msg p{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #666;
+    line-height: 22px;
+}
+
+
+.page .pagination{
+    margin: 10px 0;
+    display:flex;   /*将元素变为弹性容器*/
+    justify-content: center;
+    /*
+    justify-content控制项目在主轴上的对齐方式
+        取值
+        1.flex-start  在主轴的起点对齐
+        2.flex-end   在主轴的终点对齐
+        3.center     在主轴居中对齐
+        4.space-between 两端对齐
+        5.space-around  每个间距相同
+    */
+
+}
+.page ul{
+    list-style: none;
+}
+.page .pagination li{
+    display: block;
+    font-size: 13px;
+    margin-right: 8px;
+}
+.page .pagination li a:hover{
+    background-color: #ccc;
+}
+.pagination li>i{
+    padding:0px 10px;
+    display: block;
+    margin-top:8px;
+    font-style: normal; /*设置字体样式为正常面模式*/
+}
+
+.page .pagination .active>span{
+    color: #fff;
+    background-color: #ac1d0f;
+}
+.page .pagination li>a,
+.page .pagination li>span{
+    display: block;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 11px;
+    margin-left: -1px;
+    text-decoration: none;  /*去掉下划线*/
+}
+
+
+#bottom-site .links-about{
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
