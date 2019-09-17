@@ -10,7 +10,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/Carousel.js"></script>
     <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/Carousel2.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
@@ -27,10 +29,97 @@
             <ul>
                 <li><a href="javascript:;">首页</a></li>
                 <li><a href="qnyh.html">千年运河</a></li>
-                <li><a href="yhwx.html">运河万象</a></li>
-                <li><a href="yh18c.html">运河18城</a></li>
+                <li>
+                    <a href="yhwx.html">运河万象</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">行船</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">漕运</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">桥梁</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">古寺</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">故居</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">庙会</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="yh18c.html">运河18城</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">北京</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">宿迁</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">天津</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">淮安</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">沧州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">扬州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">德州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">常州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">衡水</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">无锡</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">聊城</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">苏州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">济宁</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">湖州</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">泰安</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">嘉兴</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">枣庄</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">杭州</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="yhtt.html">运河头条</a></li>
-                <li><a href="yhzty.html">运河主题游</a></li>
+                <li>
+                    <a href="yhzty.html">运河主题游</a>
+                    <ul>
+                        <li><a href="javascript:;">当季推荐</a></li>
+                        <li><a href="javascript:;">达人支招</a></li>
+                        <li><a href="javascript:;">别样视角</a></li>
+                    </ul>
+                </li>
                 <li><a href="yhxx.html">运河心选</a></li>
             </ul>
         </div>
@@ -200,35 +289,67 @@
     <div class="section-title" style="padding: 0 0 100px 0">运河主题游</div>
 
     <!--第二个轮播图-->
-    <div id="demo" class="carousel" data-ride="carousel">
-        <!-- 1.图片-->
-        <!--需要使用div把所有图片包裹，使用类名carousel-inner-->
-        <div class="carousel-inner">
-            <!--每一个img还需要包裹一个div,使用carousel-item-->
-            <div class="carousel-item active">
-                <a href="index-lunbo2/bo1.html"><img src="img/index/zty/1.jpg" alt=""/></a>
-            </div>
-            <div class="carousel-item">
-                <a href="index-lunbo2/bo2.html"><img src="img/index/zty/2.jpg" alt=""/></a>
-            </div>
-            <div class="carousel-item">
-                <a href="index-lunbo2/bo3.html"><img src="img/index/zty/3.jpg" alt=""/></a>
-            </div>
+    <div class="box">
+        <div class="box-1">
+            <ul>
+                <li>
+                    <a href="index-lunbo2/bo1.html"><img src="img/index/zty/1.jpg" alt="这里是第一场图片"/></a>
+                    <!--<img src="images/1.jpg" alt="这里是第一场图片"></img>-->
+                    <h2>这里是第一张图片</h2>
+                </li>
+                <li>
+                    <a href="index-lunbo2/bo2.html"><img src="img/index/zty/2.jpg" alt="这里是第二场图片"/></a>
+                    <!--<img src="images/2.jpg" alt="这里是第二张图片"></img>-->
+                    <h2>这里是第二张图片</h2>
+                </li>
+                <li>
+                    <a href="index-lunbo2/bo3.html"><img src="img/index/zty/3.jpg" alt="这里是第三场图片"/></a>
+                    <!--<img src="images/3.jpg" alt="这里是第三张图片"></img>-->
+                    <h2>这里是第三张图片</h2>
+                </li>
+            </ul>
         </div>
-        <!-- 2.左右箭头-->
-        <a href="#demo" data-slide="next" class="carousel-control-next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-        <a href="#demo"  data-slide="prev"  class="carousel-control-prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <!-- 3.轮播指示器-->
+        <div class="box-2">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="box-3">
+            <span class="prev"> < </span>
+            <span class="next"> > </span>
+        </div>
+    </div>
+
+    <!--<div id="demo" class="carousel" data-ride="carousel">-->
+        <!--&lt;!&ndash; 1.图片&ndash;&gt;-->
+        <!--&lt;!&ndash;需要使用div把所有图片包裹，使用类名carousel-inner&ndash;&gt;-->
+        <!--<div class="carousel-inner">-->
+            <!--&lt;!&ndash;每一个img还需要包裹一个div,使用carousel-item&ndash;&gt;-->
+            <!--<div class="carousel-item active">-->
+                <!--<a href="index-lunbo2/bo1.html"><img src="img/index/zty/1.jpg" alt=""/></a>-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+                <!--<a href="index-lunbo2/bo2.html"><img src="img/index/zty/2.jpg" alt=""/></a>-->
+            <!--</div>-->
+            <!--<div class="carousel-item">-->
+                <!--<a href="index-lunbo2/bo3.html"><img src="img/index/zty/3.jpg" alt=""/></a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; 2.左右箭头&ndash;&gt;-->
+        <!--<a href="#demo" data-slide="next" class="carousel-control-next">-->
+            <!--<span class="carousel-control-next-icon"></span>-->
+        <!--</a>-->
+        <!--<a href="#demo"  data-slide="prev"  class="carousel-control-prev">-->
+            <!--<span class="carousel-control-prev-icon"></span>-->
+        <!--</a>-->
+        <!--&lt;!&ndash; 3.轮播指示器&ndash;&gt;-->
         <!--<ul class="carousel-indicators">-->
             <!--<li class="active" data-slide-to="0" data-target="#demo"></li>-->
             <!--<li data-slide-to="1" data-target="#demo"></li>-->
             <!--<li data-slide-to="2" data-target="#demo"></li>-->
+            <!--<li data-slide-to="3" data-target="#demo"></li>-->
         <!--</ul>-->
-    </div>
+    <!--</div>-->
 
     <div class="section-title" style="padding-top: 100px;">运河心选</div>
 
@@ -297,4 +418,9 @@
         <p class="copyright">京杭大运河城市旅游推广联盟  浙ICP备16014841号</p>
     </div>
 
+    <span id="cnzz_stat_icon_1271236192">
+        <a href="https://www.cnzz.com/stat/website.php?web_id=1271236192" target="_blank" title="站长统计">
+            <img border="0" hspace="0" vspace="0" src="img/pic.gif">
+        </a>
+    </span>
 </body>
